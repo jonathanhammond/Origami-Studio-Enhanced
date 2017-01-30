@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741CDAE21886D21900ACF3C6 /* OZQuartzComposerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 741CDAE11886D21900ACF3C6 /* OZQuartzComposerLoader.m */; };
+		741CDAE51886EB3900ACF3C6 /* swoosh.qtz in CopyFiles */ = {isa = PBXBuildFile; fileRef = 741CDAE31886EAC600ACF3C6 /* swoosh.qtz */; };
+		742196721886A99A00A58973 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742196711886A99A00A58973 /* Cocoa.framework */; };
+		7421967C1886A99A00A58973 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7421967A1886A99A00A58973 /* InfoPlist.strings */; };
+		7421967E1886A99A00A58973 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7421967D1886A99A00A58973 /* main.m */; };
+		742196821886A99A00A58973 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 742196801886A99A00A58973 /* Credits.rtf */; };
+		742196851886A99A00A58973 /* OZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 742196841886A99A00A58973 /* OZAppDelegate.m */; };
+		742196881886A99A00A58973 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742196861886A99A00A58973 /* MainMenu.xib */; };
+		7421968A1886A99A00A58973 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742196891886A99A00A58973 /* Images.xcassets */; };
+		742196A61886A9C500A58973 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742196A51886A9C500A58973 /* Quartz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		741CDA9C1886C6EB00ACF3C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Plug-Ins";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741CDAA81886C72400ACF3C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Compositions;
+			dstSubfolderSpec = 7;
+			files = (
+				741CDAE51886EB3900ACF3C6 /* swoosh.qtz in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741CDAD91886C9DE00ACF3C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Patches;
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		741CDAAC1886C8CD00ACF3C6 /* GFGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGraph.h; sourceTree = "<group>"; };
+		741CDAAD1886C8CD00ACF3C6 /* GFGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGraphView.h; sourceTree = "<group>"; };
+		741CDAAE1886C8CD00ACF3C6 /* GFList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFList.h; sourceTree = "<group>"; };
+		741CDAAF1886C8CD00ACF3C6 /* GFNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNode.h; sourceTree = "<group>"; };
+		741CDAB01886C8CD00ACF3C6 /* GFNodeActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNodeActor.h; sourceTree = "<group>"; };
+		741CDAB11886C8CD00ACF3C6 /* GFNodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNodeManager.h; sourceTree = "<group>"; };
+		741CDAB21886C8CD00ACF3C6 /* GFPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPort.h; sourceTree = "<group>"; };
+		741CDAB31886C8CD00ACF3C6 /* GTPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPatch.h; sourceTree = "<group>"; };
+		741CDAB41886C8CD00ACF3C6 /* QCBooleanPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCBooleanPort.h; sourceTree = "<group>"; };
+		741CDAB51886C8CD00ACF3C6 /* QCCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCache.h; sourceTree = "<group>"; };
+		741CDAB61886C8CD00ACF3C6 /* QCColorPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCColorPort.h; sourceTree = "<group>"; };
+		741CDAB71886C8CD00ACF3C6 /* QCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCContext.h; sourceTree = "<group>"; };
+		741CDAB81886C8CD00ACF3C6 /* QCGLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCGLObject.h; sourceTree = "<group>"; };
+		741CDAB91886C8CD00ACF3C6 /* QCImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImageBuffer.h; sourceTree = "<group>"; };
+		741CDABA1886C8CD00ACF3C6 /* QCImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImageManager.h; sourceTree = "<group>"; };
+		741CDABB1886C8CD00ACF3C6 /* QCImagePort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImagePort.h; sourceTree = "<group>"; };
+		741CDABC1886C8CD00ACF3C6 /* QCImageTextureBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImageTextureBuffer.h; sourceTree = "<group>"; };
+		741CDABD1886C8CD00ACF3C6 /* QCIndexPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCIndexPort.h; sourceTree = "<group>"; };
+		741CDABE1886C8CD00ACF3C6 /* QCInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCInspector.h; sourceTree = "<group>"; };
+		741CDABF1886C8CD00ACF3C6 /* QCInterpolationPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCInterpolationPort.h; sourceTree = "<group>"; };
+		741CDAC01886C8CD00ACF3C6 /* QCList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCList.h; sourceTree = "<group>"; };
+		741CDAC11886C8CD00ACF3C6 /* QCNumberPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCNumberPort.h; sourceTree = "<group>"; };
+		741CDAC21886C8CD00ACF3C6 /* QCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCObject.h; sourceTree = "<group>"; };
+		741CDAC31886C8CD00ACF3C6 /* QCObjectPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCObjectPort.h; sourceTree = "<group>"; };
+		741CDAC41886C8CD00ACF3C6 /* QCOpenGLPort_Blending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOpenGLPort_Blending.h; sourceTree = "<group>"; };
+		741CDAC51886C8CD00ACF3C6 /* QCOpenGLPort_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOpenGLPort_Color.h; sourceTree = "<group>"; };
+		741CDAC61886C8CD00ACF3C6 /* QCOpenGLPort_Culling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOpenGLPort_Culling.h; sourceTree = "<group>"; };
+		741CDAC71886C8CD00ACF3C6 /* QCOpenGLPort_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOpenGLPort_Image.h; sourceTree = "<group>"; };
+		741CDAC81886C8CD00ACF3C6 /* QCOpenGLPort_ZBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOpenGLPort_ZBuffer.h; sourceTree = "<group>"; };
+		741CDAC91886C8CD00ACF3C6 /* QCPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPatch.h; sourceTree = "<group>"; };
+		741CDACA1886C8CD00ACF3C6 /* QCPatchActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPatchActor.h; sourceTree = "<group>"; };
+		741CDACB1886C8CD00ACF3C6 /* QCPatchRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPatchRuntime.h; sourceTree = "<group>"; };
+		741CDACC1886C8CD00ACF3C6 /* QCPatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPatchView.h; sourceTree = "<group>"; };
+		741CDACD1886C8CD00ACF3C6 /* QCPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPlugIn.h; sourceTree = "<group>"; };
+		741CDACE1886C8CD00ACF3C6 /* QCPlugInPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPlugInPatch.h; sourceTree = "<group>"; };
+		741CDACF1886C8CD00ACF3C6 /* QCPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPort.h; sourceTree = "<group>"; };
+		741CDAD01886C8CD00ACF3C6 /* QCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCProtocols.h; sourceTree = "<group>"; };
+		741CDAD11886C8CD00ACF3C6 /* QCProxyPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCProxyPort.h; sourceTree = "<group>"; };
+		741CDAD21886C8CD00ACF3C6 /* QCRenderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCRenderState.h; sourceTree = "<group>"; };
+		741CDAD31886C8CD00ACF3C6 /* QCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCResource.h; sourceTree = "<group>"; };
+		741CDAD41886C8CD00ACF3C6 /* QCResourcePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCResourcePool.h; sourceTree = "<group>"; };
+		741CDAD51886C8CD00ACF3C6 /* QCStringPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCStringPort.h; sourceTree = "<group>"; };
+		741CDAD61886C8CD00ACF3C6 /* QCStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCStructure.h; sourceTree = "<group>"; };
+		741CDAD71886C8CD00ACF3C6 /* QCTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCTypes.h; sourceTree = "<group>"; };
+		741CDAD81886C8CD00ACF3C6 /* QCVirtualPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCVirtualPort.h; sourceTree = "<group>"; };
+		741CDAE01886D21900ACF3C6 /* OZQuartzComposerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OZQuartzComposerLoader.h; path = Helpers/OZQuartzComposerLoader.h; sourceTree = "<group>"; };
+		741CDAE11886D21900ACF3C6 /* OZQuartzComposerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OZQuartzComposerLoader.m; path = Helpers/OZQuartzComposerLoader.m; sourceTree = "<group>"; };
+		741CDAE31886EAC600ACF3C6 /* swoosh.qtz */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; name = swoosh.qtz; path = Compositions/swoosh.qtz; sourceTree = "<group>"; };
+		7421966E1886A99A00A58973 /* Origami Studio Extras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Origami Studio Extras.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		742196711886A99A00A58973 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		742196741886A99A00A58973 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		742196751886A99A00A58973 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		742196761886A99A00A58973 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		742196791886A99A00A58973 /* Origami Studio Extras-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Origami Studio Extras-Info.plist"; sourceTree = "<group>"; };
+		7421967B1886A99A00A58973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7421967D1886A99A00A58973 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7421967F1886A99A00A58973 /* Origami Studio Extras-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Origami Studio Extras-Prefix.pch"; sourceTree = "<group>"; };
+		742196811886A99A00A58973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		742196831886A99A00A58973 /* OZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OZAppDelegate.h; sourceTree = "<group>"; };
+		742196841886A99A00A58973 /* OZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OZAppDelegate.m; sourceTree = "<group>"; };
+		742196871886A99A00A58973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		742196891886A99A00A58973 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		742196A51886A9C500A58973 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7421966B1886A99A00A58973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742196A61886A9C500A58973 /* Quartz.framework in Frameworks */,
+				742196721886A99A00A58973 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741CDA821886C60900ACF3C6 /* Compositions */ = {
+			isa = PBXGroup;
+			children = (
+				741CDAE31886EAC600ACF3C6 /* swoosh.qtz */,
+			);
+			name = Compositions;
+			sourceTree = "<group>";
+		};
+		741CDA831886C61100ACF3C6 /* Plug-Ins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Plug-Ins";
+			sourceTree = "<group>";
+		};
+		741CDAAA1886C89600ACF3C6 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		741CDAAB1886C8CD00ACF3C6 /* kineme */ = {
+			isa = PBXGroup;
+			children = (
+				741CDAAC1886C8CD00ACF3C6 /* GFGraph.h */,
+				741CDAAD1886C8CD00ACF3C6 /* GFGraphView.h */,
+				741CDAAE1886C8CD00ACF3C6 /* GFList.h */,
+				741CDAAF1886C8CD00ACF3C6 /* GFNode.h */,
+				741CDAB01886C8CD00ACF3C6 /* GFNodeActor.h */,
+				741CDAB11886C8CD00ACF3C6 /* GFNodeManager.h */,
+				741CDAB21886C8CD00ACF3C6 /* GFPort.h */,
+				741CDAB31886C8CD00ACF3C6 /* GTPatch.h */,
+				741CDAB41886C8CD00ACF3C6 /* QCBooleanPort.h */,
+				741CDAB51886C8CD00ACF3C6 /* QCCache.h */,
+				741CDAB61886C8CD00ACF3C6 /* QCColorPort.h */,
+				741CDAB71886C8CD00ACF3C6 /* QCContext.h */,
+				741CDAB81886C8CD00ACF3C6 /* QCGLObject.h */,
+				741CDAB91886C8CD00ACF3C6 /* QCImageBuffer.h */,
+				741CDABA1886C8CD00ACF3C6 /* QCImageManager.h */,
+				741CDABB1886C8CD00ACF3C6 /* QCImagePort.h */,
+				741CDABC1886C8CD00ACF3C6 /* QCImageTextureBuffer.h */,
+				741CDABD1886C8CD00ACF3C6 /* QCIndexPort.h */,
+				741CDABE1886C8CD00ACF3C6 /* QCInspector.h */,
+				741CDABF1886C8CD00ACF3C6 /* QCInterpolationPort.h */,
+				741CDAC01886C8CD00ACF3C6 /* QCList.h */,
+				741CDAC11886C8CD00ACF3C6 /* QCNumberPort.h */,
+				741CDAC21886C8CD00ACF3C6 /* QCObject.h */,
+				741CDAC31886C8CD00ACF3C6 /* QCObjectPort.h */,
+				741CDAC41886C8CD00ACF3C6 /* QCOpenGLPort_Blending.h */,
+				741CDAC51886C8CD00ACF3C6 /* QCOpenGLPort_Color.h */,
+				741CDAC61886C8CD00ACF3C6 /* QCOpenGLPort_Culling.h */,
+				741CDAC71886C8CD00ACF3C6 /* QCOpenGLPort_Image.h */,
+				741CDAC81886C8CD00ACF3C6 /* QCOpenGLPort_ZBuffer.h */,
+				741CDAC91886C8CD00ACF3C6 /* QCPatch.h */,
+				741CDACA1886C8CD00ACF3C6 /* QCPatchActor.h */,
+				741CDACB1886C8CD00ACF3C6 /* QCPatchRuntime.h */,
+				741CDACC1886C8CD00ACF3C6 /* QCPatchView.h */,
+				741CDACD1886C8CD00ACF3C6 /* QCPlugIn.h */,
+				741CDACE1886C8CD00ACF3C6 /* QCPlugInPatch.h */,
+				741CDACF1886C8CD00ACF3C6 /* QCPort.h */,
+				741CDAD01886C8CD00ACF3C6 /* QCProtocols.h */,
+				741CDAD11886C8CD00ACF3C6 /* QCProxyPort.h */,
+				741CDAD21886C8CD00ACF3C6 /* QCRenderState.h */,
+				741CDAD31886C8CD00ACF3C6 /* QCResource.h */,
+				741CDAD41886C8CD00ACF3C6 /* QCResourcePool.h */,
+				741CDAD51886C8CD00ACF3C6 /* QCStringPort.h */,
+				741CDAD61886C8CD00ACF3C6 /* QCStructure.h */,
+				741CDAD71886C8CD00ACF3C6 /* QCTypes.h */,
+				741CDAD81886C8CD00ACF3C6 /* QCVirtualPort.h */,
+			);
+			path = kineme;
+			sourceTree = "<group>";
+		};
+		741CDADF1886D1FF00ACF3C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				741CDAE01886D21900ACF3C6 /* OZQuartzComposerLoader.h */,
+				741CDAE11886D21900ACF3C6 /* OZQuartzComposerLoader.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		742196651886A99A00A58973 = {
+			isa = PBXGroup;
+			children = (
+				742196771886A99A00A58973 /* QCXcodeTemplate */,
+				742196701886A99A00A58973 /* Frameworks */,
+				7421966F1886A99A00A58973 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7421966F1886A99A00A58973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7421966E1886A99A00A58973 /* Origami Studio Extras.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		742196701886A99A00A58973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				742196A51886A9C500A58973 /* Quartz.framework */,
+				742196711886A99A00A58973 /* Cocoa.framework */,
+				742196731886A99A00A58973 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		742196731886A99A00A58973 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				742196741886A99A00A58973 /* AppKit.framework */,
+				742196751886A99A00A58973 /* CoreData.framework */,
+				742196761886A99A00A58973 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		742196771886A99A00A58973 /* QCXcodeTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				741CDADF1886D1FF00ACF3C6 /* Helpers */,
+				741CDAAB1886C8CD00ACF3C6 /* kineme */,
+				742196831886A99A00A58973 /* OZAppDelegate.h */,
+				742196841886A99A00A58973 /* OZAppDelegate.m */,
+				742196861886A99A00A58973 /* MainMenu.xib */,
+				742196891886A99A00A58973 /* Images.xcassets */,
+				742196781886A99A00A58973 /* Supporting Files */,
+			);
+			name = QCXcodeTemplate;
+			path = Swoosh;
+			sourceTree = "<group>";
+		};
+		742196781886A99A00A58973 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				741CDA831886C61100ACF3C6 /* Plug-Ins */,
+				741CDAAA1886C89600ACF3C6 /* Patches */,
+				741CDA821886C60900ACF3C6 /* Compositions */,
+				742196791886A99A00A58973 /* Origami Studio Extras-Info.plist */,
+				7421967A1886A99A00A58973 /* InfoPlist.strings */,
+				7421967D1886A99A00A58973 /* main.m */,
+				7421967F1886A99A00A58973 /* Origami Studio Extras-Prefix.pch */,
+				742196801886A99A00A58973 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7421966D1886A99A00A58973 /* Origami Studio Extras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7421969F1886A99A00A58973 /* Build configuration list for PBXNativeTarget "Origami Studio Extras" */;
+			buildPhases = (
+				7421966A1886A99A00A58973 /* Sources */,
+				7421966B1886A99A00A58973 /* Frameworks */,
+				7421966C1886A99A00A58973 /* Resources */,
+				741CDA9C1886C6EB00ACF3C6 /* CopyFiles */,
+				741CDAD91886C9DE00ACF3C6 /* CopyFiles */,
+				741CDAA81886C72400ACF3C6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Origami Studio Extras";
+			productName = Swoosh;
+			productReference = 7421966E1886A99A00A58973 /* Origami Studio Extras.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		742196661886A99A00A58973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OZ;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Just Add Music Media";
+				TargetAttributes = {
+					7421966D1886A99A00A58973 = {
+						DevelopmentTeam = KS8AT8QB64;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 742196691886A99A00A58973 /* Build configuration list for PBXProject "Origami Studio Extras" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 742196651886A99A00A58973;
+			productRefGroup = 7421966F1886A99A00A58973 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7421966D1886A99A00A58973 /* Origami Studio Extras */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7421966C1886A99A00A58973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7421967C1886A99A00A58973 /* InfoPlist.strings in Resources */,
+				7421968A1886A99A00A58973 /* Images.xcassets in Resources */,
+				742196821886A99A00A58973 /* Credits.rtf in Resources */,
+				742196881886A99A00A58973 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7421966A1886A99A00A58973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741CDAE21886D21900ACF3C6 /* OZQuartzComposerLoader.m in Sources */,
+				7421967E1886A99A00A58973 /* main.m in Sources */,
+				742196851886A99A00A58973 /* OZAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7421967A1886A99A00A58973 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7421967B1886A99A00A58973 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		742196801886A99A00A58973 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				742196811886A99A00A58973 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		742196861886A99A00A58973 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				742196871886A99A00A58973 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7421969D1886A99A00A58973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		7421969E1886A99A00A58973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		742196A01886A99A00A58973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KS8AT8QB64;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swoosh/Origami Studio Extras-Prefix.pch";
+				INFOPLIST_FILE = "Swoosh/Origami Studio Extras-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathanhammond.Origami-Studio-Ehanced";
+				PRODUCT_NAME = "Origami Studio Extras";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		742196A11886A99A00A58973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = KS8AT8QB64;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swoosh/Origami Studio Extras-Prefix.pch";
+				INFOPLIST_FILE = "Swoosh/Origami Studio Extras-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathanhammond.Origami-Studio-Ehanced";
+				PRODUCT_NAME = "Origami Studio Extras";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		742196691886A99A00A58973 /* Build configuration list for PBXProject "Origami Studio Extras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7421969D1886A99A00A58973 /* Debug */,
+				7421969E1886A99A00A58973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7421969F1886A99A00A58973 /* Build configuration list for PBXNativeTarget "Origami Studio Extras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742196A01886A99A00A58973 /* Debug */,
+				742196A11886A99A00A58973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 742196661886A99A00A58973 /* Project object */;
+}
